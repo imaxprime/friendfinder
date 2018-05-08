@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Avengers Sidekick</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="card">
+	    	<div class="card-header">
+	    		Survey questions
+	    	</div>
+      	<div class="card-body">
+		    <form method="POST" role="form" data-abide novalidate>
+    			<h3><strong>About you</strong></h3>
+          	<div class="input-wrapper">
+      			<label for="exampleFormControlInput1">Name (required)</label>
+            <input type="text" class="form-control" id="username" placeholder="" required>
+            <small class="form-error" style="display: none;">Name is required.</small>
+          	</div>
+          	<hr>
+          	<p>Answer the survey below. 1 - Strongly Disagree 5 - Strongly Agree</p>
+        	<hr>
+
+      		<h4 class="mt-4"><strong>Question 1</strong></h4>
+      		<label for="exampleFormControlSelect1">Justice is the most important thing.</label>
+        		<select class="custom-select" id="question1" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 2</strong></h4>
+      		<label for="exampleFormControlSelect1">The goverment should track and regulate Superheroes</label>
+        		<select class="custom-select" id="question2" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 3</strong></h4>
+      		<label for="exampleFormControlSelect1">You work well with others</label>
+        		<select class="custom-select" id="question3" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 4</strong></h4>
+      		<label for="exampleFormControlSelect1">You are easily tempted</label>
+          		<select class="custom-select" id="question4" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 5</strong></h4>
+      		<label for="exampleFormControlSelect1">You are trustworthy</label>
+        		<select class="custom-select" id="question5" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 6</strong></h4>
+      		<label for="exampleFormControlSelect1">You have strong morals</label>
+        		<select class="custom-select" id="question6" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 7</strong></h4>
+      		<label for="exampleFormControlSelect1">Safety is the most important thing</label>
+        		<select class="custom-select" id="question7" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 8</strong></h4>
+      		<label for="exampleFormControlSelect1">With great power comes great responsibility</label>
+        		<select class="custom-select" id="question8" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+      		<h4 class="mt-4"><strong>Question 9</strong></h4>
+      		<label for="exampleFormControlSelect1">You know how to lead</label>
+        		<select class="custom-select" id="question9" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+  
+      		<h4 class="mt-4"><strong>Question 10</strong></h4>
+      		<label for="exampleFormControlSelect1">You will do whatever it takes</label>
+        		<select class="custom-select" id="question10" required>
+        		<option selected></option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        		</select>
+
+          <p id="formError"></p>
+    			<a href="#0"><button type="submit" class="btn btn-primary mt-4 submit"><i class="fas fa-check-circle"></i> Submit</button></a>
+        </form>
+      </div>
+    </div>	
+
+    <div class="modal" tabindex="-1" role="dialog" id="avengermodal">
+	    <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		        	<h5 class="modal-title"></h5>
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			            	<span aria-hidden="true">&times;</span>
+			          	</button>
+			    </div>
+				<div class="modal-body">
+				    <p id="perfectFriend"></p>
+				        <img id="avengersidekick" width=350px height= 250px>
+				</div>
+				<div class="modal-footer">
+				    <button type="button" class="btn btn-primary rounded" data-dismiss="modal">Close</button>
+				</div>
+		    </div>
+		</div>
+	  </div>
+
+</body>
